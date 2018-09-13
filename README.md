@@ -8,6 +8,17 @@ This project is the simulation that was used to train the lamp to move on its 4 
 Running the simulation is a bit of a process that is described here in the [ml-agent documentation](https://github.com/Unity-Technologies/ml-agents/tree/master/docs).
 **__NOTE: The process to run the simulation is likely to change quite often as ml-agents is an SDK still in development.__**
 
+**There are many parts to this simulation, but the main "training" component can be found [here](https://github.com/TimothyA86/BombSweeper/blob/master/Assets/Scripts/LampAgent.cs#L98)**
+
+### Input and output of the trained model
+The lamp model is fed an input containing an x and y offset with in its camera's view and its current servo positions.
+*input = (s0, s1, s2, s3, x, y)*
+
+The lamp model then outputs what its final servo positions should be to zero the x and y offset.
+*output = (s0, s1, s2, s3)*
+
+**All input and output components are normalized between -1 and 1**
+
 ## Languages
 * C#
 
