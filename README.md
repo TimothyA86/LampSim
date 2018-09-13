@@ -9,7 +9,7 @@ Running the simulation is a bit of a process that is described here in the [ml-a
 
 **NOTE: The process to run the simulation is likely to change quite often as ml-agents is an SDK still in development.**
 
-**There are many parts to this simulation, but the main "training" component can be found [here](https://github.com/TimothyA86/LampSim/blob/master/Assets/Scripts/LampAgent.cs#L98)**
+**There are many parts to this simulation, but the main "training" component can be found [here](https://github.com/TimothyA86/LampSim/blob/master/Assets/Scripts/LampAgent.cs)**
 
 ### Input and output of the trained model
 The lamp model is fed an input containing an x and y offset with in its camera's view and its current servo positions.
